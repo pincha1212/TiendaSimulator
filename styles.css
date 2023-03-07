@@ -14,14 +14,14 @@
     color: #333;
   }
 
+/* header */
 
-/* Hacemos que los elementos dentro del header se colapsen verticalmente */
 header div {
   display: flex;
   flex-direction: column;
 }
 
-/* Ajustamos el margen superior de los elementos para que se vean mejor */
+
 header div > * {
   margin-top: 0.5rem;
 }
@@ -30,7 +30,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px; /* Ajustar la altura según sea necesario */
+  height: 100px; 
   padding: 8.5rem;
   background-color: #f00;
   color: #fff;
@@ -57,6 +57,9 @@ header {
     color: #fff;
     text-decoration: none;
   }
+
+
+  
   
   /* Main content */
   main {
@@ -112,144 +115,6 @@ header {
   section.featured-products .product button.add-to-cart:hover {
     background-color: #f55;
   }
-  section.search {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  section.search label {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  section.search input[type="text"] {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 1px 2px rgba
-  }
-  /* Navbar */
-.navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #222222;
-color: #ffffff;
-padding: 10px;
-}
-
-.navbar-brand {
-font-size: 2rem;
-font-weight: bold;
-text-transform: uppercase;
-}
-
-.navbar-menu {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 60%;
-}
-
-.navbar-menu li {
-list-style-type: none;
-margin-right: 20px;
-}
-
-.navbar-menu a {
-color: #ffffff;
-text-decoration: none;
-font-size: 1.2rem;
-font-weight: bold;
-text-transform: uppercase;
-}
-
-.navbar-menu a:hover {
-color: #ff0000;
-}
-
-/* Banner */
-.banner {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #ff0000;
-color: #ffffff;
-height: 200px;
-margin-top: 20px;
-}
-
-.banner h1 {
-font-size: 4rem;
-text-transform: uppercase;
-}
-
-/* Products */
-.products {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 20px;
-}
-
-.product {
-background-color: #f9f9f9;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-margin-bottom: 20px;
-width: calc(33.33% - 20px);
-padding: 20px;
-}
-
-.product-image {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 200px;
-}
-
-.product-image img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.product-name {
-font-size: 1.2rem;
-font-weight: bold;
-margin-top: 10px;
-}
-
-.product-price {
-font-size: 1rem;
-margin-top: 10px;
-}
-
-/* Footer */
-.footer {
-background-color: #222222;
-color: #ffffff;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
-}
-
-.footer p {
-font-size: 0.8rem;
-}
-
-.footer a {
-color: #ffffff;
-text-decoration: none;
-font-size: 0.8rem;
-}
-
-.footer a:hover {
-color: #ff0000;
-}
 
 /* Navbar */
 .navbar {
@@ -352,12 +217,14 @@ color: #ff0000;
   
   /* Footer */
   .footer {
+  text-align: center;
   background-color: #222222;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  justify-content: center;
   }
   
   .footer p {
@@ -401,6 +268,36 @@ color: #ff0000;
   }
   
   @media (max-width: 767px) {
+    .search-box {
+      margin: 10px;
+    }
+    
+    .search-box form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .search-box form input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .search-box form button[type="submit"] {
+      border: none;
+      outline: none;
+      background-color: #E70000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
   .navbar-menu {
   width: 100%;
   margin-top: 10px;

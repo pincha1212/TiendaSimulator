@@ -1,24 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de tienda en línea</title>
+  <title>Tienda en línea - Productos de calidad a precios accesibles</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href='https://boxicons.com/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>Simulador de tienda en línea</h1>
-    <button class="toggle-nav">Menú</button>
+    <div class="logo">
+      <a href="#">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAzVJREFUeF7tm+FxFDEMhfUqADqgA0gFkAqACqADkgqACoAOkgpIByQVECqADoAKzCjjm9kD23re9V2yl+eZ+5Pzau1PT7Ktc2BqTQIQnzYBAQoUIkACtCyJSEEjFZRSem5mr83saf4sc89+n742M/+cA7hkX00pKKXkQD6amQM6hOaATgE4sGXLfIbz1cweRsZW9v1vMzuOIDUVdMBwNr4MIUWAXDmHElY1gV8COK59WQWUE7IDug/NQ62YuFuAzvKKVQJ0amYXAH5G9FJKqdQHALVAbJ5dYiel9NjM3pjZu8p4fWXz7/9rLUDfKku5Z/9PEZgRE5u+YwmgyVjeVyBdAzjqBVT0vJk9AuDJjWojJuYvGmEnK+lHj6JbCrr10BitoDmgBSh7oZYTBUiAtjNOby6TgqQgKWinG06FmEJszyG28p2017R+FXbSfwAU612tEPPT7bOCsVcALphzRq4n+Zmu1I6iYtXkDOUVzRF2XprZl8JgrgAUyzpzTvPN+sk/x4NWReAzgBMS9Cg7tfrWrNN8jbbPKVRRoJ4Nl1BFA+3Mmk9UUfRT+4OCl/3vDqlYZOoo1TZLngPtePh4aJXyTDX/+LwjQLX6yYaZS/8MwFU+KXuueJuLU0z0TO14yN38ypDBjLDjOdQLYcViWH75BwA+z2KLADlxV8mTntmuqO93AO7Uagt3oWQOWBGTraGGOTAElCVfqy6uFczNuJm6uAAFLhYgAWokYOKnJylICpKCZq+ke13FmJdNZ1Irns+e7YwHmTEPy0HMywSow4tSUABLgARom4ByULShInalvUl619AZ+3d6FWMm0At92p+xL0BRZDAr822tOIyHV6MgBnRvHwGK5L2DxH9rOahXHUx/KUgKYnSyrF6jJN3BuHe1ZUJ42D6oYx50V2YCUhCNs34bv2aCcYAUFC0UjIN6Y5uxyfRhPKwQY0jmPr2OZBxwl0OseW+nxK0TEGWfBeR3El90OHNE1+q1uJrxlFLPOCn7LCC/J+SXpfymVunG2QggUxvnZnbS839p/nBKiR0nbZ8CNHr2a7InQCOW+TV5fPRYpSApaJmmpCApSApaRkAKWsbvL07lX2eyi9GEAAAAAElFTkSuQmCC"/>
+        
+      </a>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
-        <li><a href="#">Carrito</a></li>
       </ul>
     </nav>
+    <div class="search-box">
+      <form>
+        <input type="text" placeholder="Buscar...">
+        <button type="submit"><box-icon type='solid' name='search'></box-icon>BUSCAR</button>
+      </form>
+    </div>
   </header>
 
   <!-- Main content -->
@@ -26,36 +37,28 @@
     <section class="featured-products">
       <h2>Productos destacados</h2>
       <div class="product">
-        <img src="product1.jpg" alt="Producto 1">
-        <h3>Producto 1</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-        <button class="add-to-cart">Agregar al carrito</button>
+        <a href="#">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_895267-MLA51951902652_102022-V.webp" alt="Producto 1">
+          <h3>Producto 1</h3>
+        </a>
       </div>
       <div class="product">
-        <img src="product2.jpg" alt="Producto 2">
-        <h3>Producto 2</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-        <button class="add-to-cart">Agregar al carrito</button>
+        <a href="#">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_815247-MLA48574023112_122021-V.webp" alt="Producto 2">
+          <h3>Producto 2</h3>
+        </a>
       </div>
       <div class="product">
-        <img src="product3.jpg" alt="Producto 3">
-        <h3>Producto 3</h3>
-        <p>Lorem ipsum dolor sit amet</p>
-        <button class="add-to-cart">Agregar al carrito</button>
+        <a href="#">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_625859-MLA40763758065_022020-V.webp" alt="Producto 3">
+          <h3>Producto 3</h3>
+        </a>
       </div>
-    </section>
-
-    <section class="search">
-      <form>
-        <label for="search">Buscar producto:</label>
-        <input type="text" id="search" name="search">
-        <button type="submit">Buscar</button>
-      </form>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <p>Derechos reservados © 2023</p>
   </footer>
 
@@ -64,4 +67,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-
