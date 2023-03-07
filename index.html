@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de tienda en línea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Simulador de tienda en línea</h1>
+    <button class="toggle-nav">Menú</button>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <section class="featured-products">
+      <h2>Productos destacados</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </section>
+
+    <section class="search">
+      <form>
+        <label for="search">Buscar producto:</label>
+        <input type="text" id="search" name="search">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Derechos reservados © 2023</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
